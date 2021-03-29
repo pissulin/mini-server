@@ -54,7 +54,7 @@ rp(options)
         })
         
         .then(()=> {
-  
+          res.setHeader("Access-Control-Allow-Origin", "*")
           res.send(cotacoes)
         })
         
